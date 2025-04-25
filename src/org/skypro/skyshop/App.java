@@ -7,6 +7,5 @@ public class App {
         Product milk = new Product("Молоко", 30);
 
 
-
     }
     }

@@ -30,6 +30,6 @@ public Product(String name) {
     public String  toString() {
     return name;
 
-    }
-}
 
+}
+}
