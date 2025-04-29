@@ -14,20 +14,21 @@ public class ProductBasket() {
         int cost = 0;
         for (int i = 0; i < product.lenght; i++) {
 
-            cost = cost + product.lenght;
+            cost = cost += product.lenght;
             System.out.println(cost);
             return cost;
         }
         public void printBasket {
             boolean isEmpty = true;
             for (Product products : product) {
-                if (isEmpty == false) {
+                if (!isEmpty) {
                     System.out.println(products.getName() + ": " + products.getGetPrice());
                 }
-                if (isEmpty == true) {
-
-                    System.out.println("В корзине пусто");
+                if (isEmpty != true) {
+                    continue;
                 }
+
+                System.out.println("В корзине пусто");
             }
             System.out.println("Итого: ");
 
