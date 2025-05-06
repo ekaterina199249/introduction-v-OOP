@@ -2,8 +2,9 @@ package org.skypro.skyshop;
 
 import javax.xml.namespace.QName;
 import java.util.DoubleSummaryStatistics;
+import java.util.stream.IntStream;
 
-public class ProductBasket() {
+public class ProductBasket () {
 
 
     public void nameProductBasket() {
@@ -12,31 +13,25 @@ public class ProductBasket() {
 
     public int allSum(Product product) {
         int cost = 0;
+
+        for (int i = 0; i < product.lenght; i++) cost = products[i].getSum() + cost;
+        System.out.println(cost);
+        return cost;
+    }
+
+    public void printBasket(Product product) {
         for (int i = 0; i < product.lenght; i++) {
+            if (product[i] == null) {
+                System.out.println("В корзине пусто!");
+            } else System.out.println(product[i]);
 
-            cost = cost += product.lenght;
-            System.out.println(cost);
-            return cost;
+
+            System.out.println("Итого: " + allSum(product));
         }
-        public void printBasket {
-            boolean isEmpty = true;
-            for (Product products : product) {
-                if (!isEmpty) {
-                    System.out.println(products.getName() + ": " + products.getGetPrice());
-                }
-                if (isEmpty != true) {
-                    continue;
-                }
-
-                System.out.println("В корзине пусто");
-            }
-            System.out.println("Итого: ");
-
-
-        }
-        return product.lenght;
     }
 }
+
+
 
 
 
