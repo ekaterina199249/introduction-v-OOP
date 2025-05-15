@@ -1,35 +1,56 @@
 package org.skypro.skyshop;
 
-import javax.xml.namespace.QName;
-import java.util.DoubleSummaryStatistics;
-import java.util.stream.IntStream;
-
-public class ProductBasket () {
+public class ProductBasket {
 
 
-    public void nameProductBasket() {
+
+    public void productBasket() {
 
     }
+    public void addProduct(Product product) {
 
+        boolean productBasket = false;
+        for (int i = 0; i < productBasket.lenght; i++) {
+
+            if (productBasket[i] != null) {
+
+                return;
+            }
+
+        }
+    System.out.println("Невозможно добавить продукт");
+}
     public int allSum(Product product) {
         int cost = 0;
 
-        for (int i = 0; i < product.lenght; i++) cost = products[i].getSum() + cost;
-        System.out.println(cost);
+        for (int i = 0; i <= cost; i++) {
+            System.out.println(cost);
+        }
+
         return cost;
     }
 
     public void printBasket(Product product) {
-        for (int i = 0; i < product.lenght; i++) {
-            if (product[i] == null) {
+        boolean isEmpty = true;
+        for (Product product : productBasket) {
+            System.out.println(product.getName() + ": " + product.getQuantity());
+            isEmpty = false;
+        }
+            if (isEmpty) {
                 System.out.println("В корзине пусто!");
-            } else System.out.println(product[i]);
 
 
-            System.out.println("Итого: " + allSum(product));
+
+            System.out.println("Итого: " + getTotalQuantity());
         }
     }
+
+    private String getTotalQuantity() {
+
+        return getTotalQuantity();
+    }
 }
+
 
 
 

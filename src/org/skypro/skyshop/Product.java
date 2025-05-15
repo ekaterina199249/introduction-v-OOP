@@ -1,21 +1,21 @@
 package org.skypro.skyshop;
 
 public class Product {
-    public String product;
-    public int lenght;
     private String name;
+    private int quantity;
+
+    public Product(String name, int quantity) {
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
     public String getName() {
-        return name;
-
-    }
-
-    public Product(String name, int i) {
-        this.name = name;
-    }
-
-    public String toString() {
         return name;
 
 
     }
 }
+
+
