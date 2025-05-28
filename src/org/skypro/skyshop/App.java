@@ -1,8 +1,5 @@
 package org.skypro.skyshop;
 
-import javax.sound.sampled.Line;
-import java.io.PrintStream;
-
 public class App {
 
     public static void main(String[] args) {
@@ -13,11 +10,17 @@ public class App {
         Product eggs = new Product("Яйца", 20);
         Product juice = new Product("Сок", 3);
 
-        System.out.println(apple);
-        System.out.println(milk);
-        System.out.println(bread);
-        System.out.println(eggs);
-        System.out.println(juice);
+     basket.addProduct(apple);
+     basket.addProduct(milk);
+     basket.addProduct(bread);
+     basket.addProduct(eggs);
+     basket.addProduct(juice);
+
+     basket.test();
+     basket.getSum();
+     basket.printBasket();
+
         }
     }
+
 
