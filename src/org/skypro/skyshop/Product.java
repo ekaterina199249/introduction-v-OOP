@@ -29,6 +29,7 @@ public abstract class Product {
     public boolean isEmpty() {
         return false;
     }
+    }
 }
 
 
