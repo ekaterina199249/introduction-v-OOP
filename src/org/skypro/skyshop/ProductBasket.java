@@ -21,7 +21,7 @@ public class ProductBasket {
         int cost = 0;
         for (int i = 0; i < this.products.length; i++) {
             if (this.products != null) {
-                int price = this.products[i].getQuantity();
+                int price = this.products[i].getPrice();
                 cost += price;
             }
         }

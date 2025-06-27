@@ -1,35 +1,36 @@
 package org.skypro.skyshop;
 
-public class Product {
-    private String name;
-    private int quantity;
+import java.util.Objects;
 
-    public Product(String name, int quantity) {
+public abstract class Product {
+    protected String name;
+
+
+    public Product(String name, int price) {
         this.name = name;
-        this.quantity = quantity;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public abstract int getPrice() {
+
     }
 
-
-    public String getName() {
+    public String getProductName() {
         return name;
     }
-
     @Override
     public String toString() {
+        String price = new String();
         return "Product{" +
                 "name='" + name + '\'' +
-                ", price=" + quantity +
+                ", price=" + price +
                 '}';
     }
 
     public boolean isEmpty() {
-    return false;
+        return false;
     }
 }
+
 
 
 
