@@ -4,11 +4,11 @@ public class App {
 
     public static void main(String[] args) {
         ProductBasket basket = new ProductBasket();
-        Product apple = new Product("Яблоко", 30);
-        Product milk = new Product("Молоко", 30);
-        Product bread = new Product("Хлеб", 2);
-        Product eggs = new Product("Яйца", 20);
-        Product juice = new Product("Сок", 3);
+        SimpleProduct apple = new SimpleProduct("Яблоко", 30);
+        SimpleProduct milk = new SimpleProduct("Молоко", 30);
+        SimpleProduct bread = new SimpleProduct("Хлеб", 2);
+        SimpleProduct eggs = new SimpleProduct("Яйца", 20);
+        SimpleProduct juice = new SimpleProduct("Сок", 3);
 
      basket.addProduct(apple);
      basket.addProduct(milk);
